@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnMaximize = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnMinimize = new Bunifu.Framework.UI.BunifuImageButton();
+            this.xuiCard3 = new XanderUI.XUICard();
             this.xuiCard2 = new XanderUI.XUICard();
             this.xuiCard1 = new XanderUI.XUICard();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,21 +46,19 @@
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.xuiButton1 = new XanderUI.XUIButton();
-            this.xuiCard3 = new XanderUI.XUICard();
-            this.btnMaximize = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnMinimize = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Controls.Add(this.btnMaximize);
             this.bunifuGradientPanel1.Controls.Add(this.btnClose);
             this.bunifuGradientPanel1.Controls.Add(this.btnMinimize);
@@ -74,6 +76,66 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(801, 413);
             this.bunifuGradientPanel1.TabIndex = 0;
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximize.BackColor = System.Drawing.Color.Transparent;
+            this.btnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximize.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximize.Image")));
+            this.btnMaximize.ImageActive = null;
+            this.btnMaximize.Location = new System.Drawing.Point(744, 9);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(19, 20);
+            this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximize.TabIndex = 18;
+            this.btnMaximize.TabStop = false;
+            this.btnMaximize.Zoom = 10;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageActive = null;
+            this.btnClose.Location = new System.Drawing.Point(769, 9);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(20, 20);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 16;
+            this.btnClose.TabStop = false;
+            this.btnClose.Zoom = 10;
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.ImageActive = null;
+            this.btnMinimize.Location = new System.Drawing.Point(713, 9);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(26, 22);
+            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimize.TabIndex = 17;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Zoom = 10;
+            // 
+            // xuiCard3
+            // 
+            this.xuiCard3.BackColor = System.Drawing.Color.Transparent;
+            this.xuiCard3.Color1 = System.Drawing.Color.Yellow;
+            this.xuiCard3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.xuiCard3.ForeColor = System.Drawing.Color.White;
+            this.xuiCard3.Location = new System.Drawing.Point(363, 45);
+            this.xuiCard3.Name = "xuiCard3";
+            this.xuiCard3.Size = new System.Drawing.Size(162, 85);
+            this.xuiCard3.TabIndex = 3;
+            this.xuiCard3.Text = "xuiCard3";
+            this.xuiCard3.Text1 = "MÉDIA DA TURMA";
+            this.xuiCard3.Text2 = "7.5";
+            this.xuiCard3.Text3 = "";
             // 
             // xuiCard2
             // 
@@ -357,65 +419,14 @@
             this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // xuiCard3
+            // label1
             // 
-            this.xuiCard3.BackColor = System.Drawing.Color.Transparent;
-            this.xuiCard3.Color1 = System.Drawing.Color.Yellow;
-            this.xuiCard3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.xuiCard3.ForeColor = System.Drawing.Color.White;
-            this.xuiCard3.Location = new System.Drawing.Point(363, 45);
-            this.xuiCard3.Name = "xuiCard3";
-            this.xuiCard3.Size = new System.Drawing.Size(162, 85);
-            this.xuiCard3.TabIndex = 3;
-            this.xuiCard3.Text = "xuiCard3";
-            this.xuiCard3.Text1 = "MÉDIA DA TURMA";
-            this.xuiCard3.Text2 = "7.5";
-            this.xuiCard3.Text3 = "";
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.BackColor = System.Drawing.Color.Transparent;
-            this.btnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximize.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximize.Image")));
-            this.btnMaximize.ImageActive = null;
-            this.btnMaximize.Location = new System.Drawing.Point(744, 9);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(19, 20);
-            this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximize.TabIndex = 18;
-            this.btnMaximize.TabStop = false;
-            this.btnMaximize.Zoom = 10;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(769, 9);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 20);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClose.TabIndex = 16;
-            this.btnClose.TabStop = false;
-            this.btnClose.Zoom = 10;
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
-            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.ImageActive = null;
-            this.btnMinimize.Location = new System.Drawing.Point(713, 9);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(26, 22);
-            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimize.TabIndex = 17;
-            this.btnMinimize.TabStop = false;
-            this.btnMinimize.Zoom = 10;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(444, 230);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "label1";
             // 
             // Form1
             // 
@@ -428,10 +439,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.bunifuGradientPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -455,6 +467,7 @@
         private Bunifu.Framework.UI.BunifuImageButton btnMaximize;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private Bunifu.Framework.UI.BunifuImageButton btnMinimize;
+        private System.Windows.Forms.Label label1;
     }
 }
 
